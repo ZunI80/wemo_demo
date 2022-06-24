@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale-1.0, maximum-scale-1.0, user-scalable=no">
+    <title>WeMo-demo</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./wemo2-jq.css">
+</head>
+<body class="position-relative">
+    <nav>
+        <div class="downloadbar-bg p-3">
+            <div class="downloadbar-container">
+                <div class="d-row justify-content-between align-items-center">
+                    <a href="#">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <title>cancel-circle</title>
+                            <path fill="f0f8ff" d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 29c-7.18 0-13-5.82-13-13s5.82-13 13-13 13 5.82 13 13-5.82 13-13 13z"></path>
+                            <path fill="f0f8ff" d="M21 8l-5 5-5-5-3 3 5 5-5 5 3 3 5-5 5 5 3-3-5-5 5-5z"></path>
+                            </svg>
+                    </a>
+                    <div class="coupon justify-content-center align-items-center">
+                        <span>立即下載APP，領取騎乘券 </span>
+                            <a href="">
+                                <span class="rightnow ml-3">
+                                    現在下載
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                        <title>download</title>
+                                        <path d="M16 18l8-8h-6v-8h-4v8h-6zM23.273 14.727l-2.242 2.242 8.128 3.031-13.158 4.907-13.158-4.907 8.127-3.031-2.242-2.242-8.727 3.273v8l16 6 16-6v-8z"></path>
+                                        </svg>
+                                </span> 
+                            </a>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-container pt-3 pb-3 ">
+            <div class="d-row justify-content-between align-items-center ">
+                <div class="logo ">
+                    <img src="./images/logo_橫-png.png" alt="">
+                </div>
+                <div class="nav-list" >
+                    <ul class="list-unstyled d-flex justify-content-end align-items-center">
+                        <li><a href="">使用WeMo</a></li>
+                        <li><a href="">優惠活動</a></li>
+                        <li><a href="">常見問題</a></li>
+                        <li><a href="">部落格</a></li>
+                        <li><a href="">安心安全</a></li>
+                        <li><a href="">新聞專區</a></li>
+                        <li><a href="">失物招領</a></li>
+                        <li><a href="">下載APP</a></li>
+                    </ul>
+                </div>
+                <div class="moreico d-flex align-content-center ">
+                    <div class="svg-fb">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-w">
+                            <title>facebook</title>
+                            <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                        </svg>
+                    </div>
+                    <div class="svg-search">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" class="svg-w">
+                            <title>search</title>
+                            <path d="M31.008 27.231l-7.58-6.447c-0.784-0.705-1.622-1.029-2.299-0.998 1.789-2.096 2.87-4.815 2.87-7.787 0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12c2.972 0 5.691-1.081 7.787-2.87-0.031 0.677 0.293 1.515 0.998 2.299l6.447 7.58c1.104 1.226 2.907 1.33 4.007 0.23s0.997-2.903-0.23-4.007zM12 20c-4.418 0-8-3.582-8-8s3.582-8 8-8 8 3.582 8 8-3.582 8-8 8z"></path>
+                        </svg>
+                    </div>
+                    <div class="svg-menu">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                            <title>menu</title>
+                            <path fill="#4cbef3" d="M2 6h28v6h-28zM2 14h28v6h-28zM2 22h28v6h-28z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main class="">
+        <div class="jumbotron-wrap">
+            <div class="jumbotron-train">
+                <ul class=" list-unstyled d-flex m-0 ">
+                    <li>
+                        <img src="./images/首頁輪播圖-防疫措施-jpg.jpeg" alt="">
+                        <div class="jumbo-text1">
+                            <p>24 小時專業維運</p>
+                            <p>清潔消毒不馬虎</p>
+                            <span>更多防疫措施</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/首頁輪播圖_安心安全-min-jpg.jpeg" alt="">
+                        <div class="jumbo-text2 ">
+                            <p>安心安全</p>
+                            <p>24小時專業維護</p>
+                            <span>瞭解更多</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/首頁輪播圖_新加入會員-min-jpg.jpeg" alt="">
+                        <div class="jumbo-text3">
+                            <p>新加入會員</p>
+                            <p>享免費騎乘體驗</p>
+                            <span>首月免費</span>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="./images/首頁輪播圖_自由穿梭城市-min-jpg.jpeg" alt="">
+                        <div class="jumbo-text4">
+                            <p>自由穿梭城市</p>
+                            <p>享受全新的移動體驗</p>
+                            <span>更多優惠</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <ul class="jumbo-select list-unstyled d-flex">
+                <li class="img1"></li>
+                <li class="img2"></li>
+                <li class="img3"></li>
+                <li class="img4"></li>
+            </ul>
+        </div> 
+        <div class="app-store pt-5 pb-5">
+            <div class="container">
+                <div class="row justify-content-center flex-column align-content-center">
+                    <div class="app-text">
+                        <h3>只需帶上手機<br>用App預訂機車</h3>
+                        <p>讓你快速、精準地到達目的地<br>享受前所未有的通勤體驗！</p>
+                    </div>
+                    <div class="QR-code">
+                        <img src="/images/Website_HomePage-png (1).png" alt="">
+                    </div>
+                    <div class="app-img">
+                        <div class="ios-img">
+                            <img src="./images/appStoreBadge-png (1).png" alt="">
+                        </div>
+                        <div class="aos-img">
+                            <img src="./images/playbadge-png (1).png" alt="">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-80">
+            <div class="row pt-5 pb-5 justify-content-between" >
+                <div class="spirit-left m-auto">
+                    <h2>品牌精神</h2>
+                    <p>WeMo Scooter 提供24小時隨租隨還共享電動機車平台服務，只要手機APP即可一鍵開啟創新的交通模式，矢志創造以租代買的交通新體驗。WeMo Scooter提供城市移動的科技與服務，以用戶需求為核心，開發車聯網新價值，帶給消費者與企業用戶最安心的騎乘體驗，用智慧出行串連生活大小事，為城市創建更美好的生活。</p>
+                    <div class="spirit-img">
+                        <img src="./images/logo_橫-png.png" alt="">
+                    </div>
+                </div>
+                <div class="spirit-right pt-4">
+                    <img src="./images/品牌精神圖大.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="skill-bg">
+            <div class="skill-bgc">
+            <div class="container">
+                <div class="row">
+                    <div class="skill-container">
+                        <div class="skill-card ">
+                            <img src="./images/領先.png" alt="">
+                            <h4>領先業界</h4>
+                            <p >台灣亞洲最大規模隨租隨還智慧機車服務</p>
+                        </div>
+                        <div class="skill-card ">
+                            <img src="./images/智慧化.png" alt="">
+                            <h4>智慧化服務</h4>
+                            <p >透過持續智慧分析以及大數據，自動優化消費者騎乘體驗</p>
+                        </div>
+                        <div class="skill-card "> 
+                            <img src="./images/橫跨.png" alt="">
+                            <h4>橫跨多領域</h4>
+                            <p>車聯網商業應用、大數據、IOT、共享經濟等多樣領域
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container-80 pt-5 pb-5">
+            <div class="row flex-column  ">
+                <div class="idea-text m-auto d-flex flex-column ">
+                    <h5 class="mb-3">企業理念</h5>
+                    <p class="mb-3">WeMo Scooter 三大理念</p>
+                </div>
+                <div class="idea-card-container mt-5">
+                    <div class="idea-card ">
+                        <img src="./images/企業理念＿以租代買-min-1.jpeg" alt="">
+                        <div class="card-text">
+                            <h6 class="mt-2 mb-2">共享！以租代買釋放城市空間</h6>
+                            <p>WeMo Scooter 24小時即時租借的便捷模式，消費者透過共享，無需再買車，亦可享有自由移動的便利。以共享降低私有載具購買，釋放更多城市空間。以智慧電動機車服務，實踐更乾淨美好的生活願景，帶給城市更經濟實惠，暢行無阻且有趣的交通新體驗，共創城市新藍圖。</p>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <img src="./images/企業理念＿安心安全-min-1.jpeg" alt="">
+                        <div class="card-text">
+                            <h6 class="mt-2 mb-2">車輛專業維運 ，天天安心騎</h6>
+                            <p>WeMo Scooter 每台車定期由專業營運團隊維護與保養，依據嚴謹標準作業流程每日進行例行檢測、清潔與保養等，給予消費者最便利及高品質的專業安心感，讓消費者省去龐大買車費用，後續保養時間與經費成本。車輛有了全面照護，使用騎乘好安心。</p>
+                        </div>
+                    </div>
+                    <div class="idea-card">
+                        <img src="./images/企業理念＿綠色交通-min-1.jpeg" alt="">
+                        <div class="card-text">
+                            <h6 class="mt-2 mb-2">大數據車聯網技術 打造智慧城市</h6>
+                            <p>WeMo Scooter 整合軟硬體技術，開創車聯網新價值，每台車配有獨家智慧盒技術與多種感應器，所蒐集之大數據可應用在路平專案等城市交通改革上，有助於多元有價值的社會應用，與用戶一起建造智慧城市。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-80 mt-5 overpush ">
+            <div class="row">
+                <div class="popular d-flex ">
+                    <div class="popular-card mt-3 mb-3">
+                        <img src="./images/租借2.7-1.png" alt="">
+                        <p>每 2.7 秒就有一台<br>WeMo Scooter 被租借</p>
+                    </div>
+                    <div class="popular-card mt-3 mb-3">
+                        <img src="./images/百萬下載-1.png" alt="">
+                        <p>WeMo Scooter App<br>超過百萬次下載</p>
+                    </div>
+                    <div class="popular-card mt-3 mb-3">
+                        <img src="./images/停車場50000.png" alt="">
+                        <p>特約停車場超過<br>50000+ 次使用</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video-con">
+            <div class="video-bg">
+                <iframe class="" title="2 秒啟動智慧 GO！24 小時隨租隨還共享機車是你的交通新選擇！｜想去哪隨時出發" src="https://www.youtube.com/embed/GDm12J_RPqA?feature=oembed&amp;rel=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" name="fitvid0"></iframe>
+                <div class="video-text">
+                    <p class="">立即下載</p> 
+                    <h6 class="">現在就前往體驗</h6>
+                    <div class="videodownload-img pt-3">
+                        <img src="./images/appStoreBadge-png (1).png" alt="">
+                        
+                        <img src="./images/play_btn-png (1).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team-bg">
+            <div class="team-bgc">
+                <div class="container-80">
+                    <div class="team-area m-auto">
+                        <h5>團隊陣容</h5>
+                        <p class="second">
+                            我們的第一步，要在五年內改變台北的樣貌
+                            <br>
+                            邀請你,一騎加入!
+                        </p>
+                        <div class="green-line"></div>
+                        <p>WeMo Scooter 由擁有國際顧問公司工作經驗的創辦人領軍，聚焦共享經濟精神，攜手一群抱著改變世界的理想團隊，從零開始，創立亞洲亞洲第一個24小時隨租隨還共享智慧機車服務。  我們相信追求交通自由，也有對這片土地更友善的交通方式。以車聯網技術核心為出發，秉持用以租代買新型態交通實踐永續生活，有感地改變人們的城市生活，提供安全的便利交通服務。  WeMo Scooter 鼓勵團隊創新，持續透過差異化的服務開發 ，將企業理念透過產品傳遞給更多朋友。WeMo Scooter 從台灣在地出發，立志成為一個具啟發性的國際社會創新品牌。我們不只是交通服務平台，更是帶動移動經濟與智慧城市再造的重要推手。  如果你喜歡創新實踐的無限可能，或是相信科技可以翻轉世界，有信心做出改變世界的產品，歡迎你親自感受 WeMo Scooter 創造正向改變的力量。</p>
+                    </div>
+                    <div class="btns d-flex flex-column justify-content-center ">
+                        <button type="button" class="btn btn-success">合作提案</button> 
+                        <button type="button" class="btn btn-success">加入我們</button>    
+                        <span>點此進入 Yourator</span>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-bg">
+            <div class="container-80">
+                <div class="row flex-column">
+                    <div class="footer-list d-flex justify-content-around flex-wrap h-auto ">
+                        <div class="use mycol-6  order-0 flex-grow-1" >
+                            <p><a href="">使用wemo</a></p>
+                            <p><a href="">下載 / 註冊 4 步驟</a></p>
+                            <p><a href="">APP 使用教學</a></p>
+                            <p><a href="">WeMo 4 大特色</a></p>
+                        </div>
+                        <div class="blog mycol-6  order-2">
+                            <p><a href="">部落格</a></p>
+                        </div>
+                        <div class="prob mycol-6  order-1 flex-grow-1">
+                            <p><a href="">常見問題</a></p>
+                            <p><a href="">註冊問題</a></p>
+                            <p><a href="">租車問題</a></p>
+                            <p><a href="">騎乘問題</a></p>
+                            <p><a href="">車況問題</a></p>
+                        </div>
+                        <div class="case mycol-6  order-3">
+                            <p><a href="">合作提案</a></p>
+                            <p><a href="">服務條款</a></p>
+                        </div>
+                    </div>
+                    <div class="ccright pt-3">
+                        <p>Copyright © 威摩科技股份有限公司 WeMo Corp. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="top-icowrap top-ico-none">
+        <a href="">
+            <div class="top-ico">
+                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                    <title>arrow-up2</title>
+                    <path d="M27.414 12.586l-10-10c-0.781-0.781-2.047-0.781-2.828 0l-10 10c-0.781 0.781-0.781 2.047 0 2.828s2.047 0.781 2.828 0l6.586-6.586v19.172c0 1.105 0.895 2 2 2s2-0.895 2-2v-19.172l6.586 6.586c0.39 0.39 0.902 0.586 1.414 0.586s1.024-0.195 1.414-0.586c0.781-0.781 0.781-2.047 0-2.828z"></path>
+                </svg>
+            </div>
+        </a>
+    </div>
+<!-- to top -->
+
+    <script src="./js/jquery-3.6.0.js"></script>
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+    
+    <script>
+        $(".jumbo-select li").mouseenter(function(){
+            console.log($(this));
+            $(this).css('background','#fff');
+            console.log($(this).siblings()) 
+            $(this).siblings().css('background','#ffffff00')
+        })
+
+        const x = $('.app-store').offset().top;
+        // console.log(x);
+        // console.log($(window).height());
+        // console.log($(window).scroll());
+
+        $(window).scroll(function(){
+
+            if ($(window).scrollTop() > x ) {
+                    $('.top-icowrap').removeClass('top-ico-none')
+                    $('.top-icowrap').addClass('top-ico-block')
+            } else {
+                    $('.top-icowrap').removeClass('top-ico-block')
+                    $('.top-icowrap').addClass('top-ico-none')
+            }
+        })
+        $(window).scroll(function () {
+
+        if ( $(window).scrollTop() >= x) {
+            $('nav').addClass('fixed')
+
+        }
+        else
+            $('nav').removeClass('fixed')
+        })
+        // 
+        $('.jumbo-select li').mouseenter(function(){
+            console.log('hi',$(this).index());
+
+            $('.jumbotron-train').css('transform','translateX('+ $(this).index() * -25 +'%)');
+        })
+        $(document).ready(function(){
+            // console.log('hello');
+            let page = 0;
+            if (page >= 5) {
+                page = 0;
+            }
+            $('.train').css('transform','translateX('+ page * -25 +'%)');
+        })
+
+    </script>
+</body>
+</html>
